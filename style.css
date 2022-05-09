@@ -1,0 +1,19 @@
+.scroll-content {
+  overflow-y: scroll;
+}
+body {
+  background-color: black;
+}
+section-underline {
+  border-bottom: solid 1px white;
+}
+.main-image {
+  display: block;
+  width: 244px;
+  height: 300px;
+}
+.picture {
+  align-items: center;
+  margin-inline: auto;
+  justify-content: center;
+}
