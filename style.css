@@ -232,7 +232,7 @@ i:hover {
 }
 section {
   margin-right: 150px;
-  height: 100vh;
+  margin-bottom: 50px;
 }
 .image-box {
   display: flex;
@@ -277,6 +277,63 @@ section {
   opacity: 0.05;
 }
 
+/* Achievements */
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.achievement {
+  transition: --num 1s;
+  counter-set: num var(--num);
+  font: 800 26px system-ui;
+  width: fit-content;
+  display: flex;
+  flex-direction: column-reverse;
+    align-items: center;
+}
+.achievement::after {
+  content: counter(num);
+}
+/* .achievement:hover {
+  --num: 100;
+} */
+#awards:hover {
+--num:3;
+}
+#projects:hover {
+  --num:5;
+}
+#apps:hover {
+  --num:4
+}
+.achievements-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Services */
+.accordion-item {
+  background-color: transparent;
+}
+.accordion-button {
+  background-color: transparent;
+    border-bottom: solid;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #f7f4f3;
+  box-shadow: none;
+  border-bottom: solid .1px;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
 /* Resume */
 
-/* Timeline */
+/* Portfolio/ */
+.modal-body {
+  background-color: transparent;
+}
