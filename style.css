@@ -161,6 +161,14 @@ p {
   font-family: "Source Sans Pro", sans-serif;
   padding: 20px;
 }
+h4 {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #f7f4f3;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
 /* introduction  */
 .introduction {
   height: 100vh;
@@ -336,4 +344,36 @@ section {
 /* Portfolio/ */
 .modal-body {
   background-color: transparent;
+}
+.portfolio-image {
+width: 100%;
+ height: auto; 
+ padding-left: 20px;
+}
+
+/* Testimonials */
+.testimonial-image {
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+#testimonial-carousel {
+  margin-top: 50px;
+}
+.carousel-caption p {
+  font-style: italic;
+}
+/* .carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} */
+.progress-bar {
+  height: 1px;
+  margin-left: 20px;
+  /* color: #7c7c7c !important; */
+  background-color: #f7f4f3;
+}
+.progress-bar-label {
+  margin-left: 20px;
+  width: fit-content;
 }

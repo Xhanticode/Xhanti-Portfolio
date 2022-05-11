@@ -28,7 +28,11 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+
+    <!-- Main Container  -->
     <div class="row main-container d-inline-flex">
+
+      <!-- Landing Image  -->
       <div class="col-6 image-box">
         <h3 id="image-title">Xhanti Mpu</h3>
         <div class="picture">
@@ -41,8 +45,12 @@
         <div class="image-frame" id="frame-1"></div>
         <div class="image-frame" id="frame-2"></div>
         <div class="image-frame" id="frame-3"></div>
-      </div>
+      </div> 
+
+      <!-- Scroll Content  -->
       <div class="scroll-content col-6 d-flex-start">
+
+        <!-- Introduction  -->
         <section class="introduction">
           <div class="section-head">
             <h3 class="section-title" style="padding-left: 0">introduction</h3>
@@ -102,6 +110,8 @@
 
           <div class="section-content"></div>
         </section>
+
+        <!-- About  -->
         <section class="about w-1oovh">
           <div class="section-head" data-aos="fade-up">
             <h3 class="section-title">About</h3>
@@ -120,6 +130,8 @@
           </div>
           <div class="section-content"></div>
         </section>
+
+        <!-- Achievements  -->
         <section class="achievements w-1oovh">
           <div class="section-head">
             <h3 class="section-title">Achievements</h3>
@@ -139,6 +151,8 @@
             <div class="achievement rounded-circle" id="apps"><p>Apps</p></div>
           </div>
         </section>
+
+        <!-- Services  -->
         <section class="services w-1oovh">
           <div class="section-head">
             <h3 class="section-title">Services</h3>
@@ -195,6 +209,8 @@
             </div> 
           </div>
         </section>
+
+        <!-- Resume  -->
         <section class="resume w-1oovh">
           <div class="section-head">
             <h3 class="section-title">Resume</h3>
@@ -208,6 +224,8 @@
           </div>
           <div class="section-content"></div>
         </section>
+
+        <!-- Skills  -->
         <section class="skills w-1oovh">
           <div class="section-head">
             <h3 class="section-title">Skills</h3>
@@ -220,8 +238,17 @@
               sed?
             </p>
           </div>
-          <div class="section-content"></div>
+          <div class="section-content">
+            <!-- Skills Bar -->
+            <h4 class="progress-bar-label" data-bs-toggle="tooltip" data-bs-placement="top" title="85%">HTML</h4>
+            <div class="progress progress-bar my-4" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" title="85%"></div>
+            <h4 class="progress-bar-label" data-bs-toggle="tooltip" data-bs-placement="top" title="80%">CSS</h4>  
+            <div class="progress progress-bar my-4" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" title="80%"></div>
+            <h4 class="progress-bar-label" data-bs-toggle="tooltip" data-bs-placement="top" title="90%">bootstrap</h4>  
+            <div class="progress progress-bar my-4" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" title="90%"></div>
         </section>
+
+        <!-- Portfolio  -->
         <section class="portfolio w-1oovh">
           <div class="section-head">
             <h3 class="section-title">Portfolio</h3>
@@ -233,15 +260,16 @@
             </p>
           </div>
           <div class="section-content">
-            <!-- Button trigger modal -->
 
-<img data-bs-toggle="modal" data-bs-target="#exampleModal" src="./Images/Restaurantly Site.png" alt="Restaurantly site" style="width: auto; height: 200px; padding-left: 20px;">
+            <!-- Restaurantly Modal  -->
+            <!-- Button trigger modal -->
+<img class="portfolio-image" data-bs-toggle="modal" data-bs-target="#Restaurantly" src="./Images/Restaurantly Site.png" alt="Restaurantly site">
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Restaurantly" tabindex="-1" aria-labelledby="RestaurantlyLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Restaurantly</h5>
+        <h5 class="modal-title" id="RestaurantlyLabel">Restaurantly</h5>
         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
       </div>
       <div class="modal-body d-flex justify-content-around">
@@ -255,20 +283,32 @@
     </div>
   </div>
 </div>
+<!-- Mock Portfolio Modal  -->
+ <!-- Button trigger modal -->
+<img class="portfolio-image" data-bs-toggle="modal" data-bs-target="#MockPortfolio" src="./Images/Mock Portfolio Site.png" alt="Mock Portfolio Site">
+ <!-- Modal -->
+ <div class="modal fade" id="MockPortfolio" tabindex="-1" aria-labelledby="MockPortfolioModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="MockPortfolioModalLabel">Restaurantly</h5>
+         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+       </div>
+       <div class="modal-body d-flex justify-content-around">
+         <img src="./Images/Mock Portfolio Site.png" alt="Mock Portfolio Site" style="width: auto; height: 300px;">
+         <p style="height: 300px; width: fit-content;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repellendus consequuntur quae fugit recusandae officiis consequatur tempora tempore, dicta perspiciatis blanditiis delectus ratione animi sapiente minus ut quo dignissimos perferendis.</p>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn"><i class="fa-solid fa-circle-info"></i></button>
+         <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+       </div>
+     </div>
+   </div>
+ </div>
           </div>
         </section>
-        <section class="customers">
-          <div class="section-head">
-            <h3 class="section-title">Customers</h3>
-            <h2 class="section-subtitle">Selected Clients</h2>
-            <span class="section-underline"></span>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et nobis
-              quos sed!
-            </p>
-          </div>
-          <div class="section-content"></div>
-        </section>
+        
+        <!-- Testimonials  -->
         <section class="testimonials w-1oovh">
           <div class="section-head">
             <h3 class="section-title">Testimonials</h3>
@@ -277,8 +317,95 @@
             </h2>
             <span class="section-underline"></span>
           </div>
-          <div class="section-content"></div>
+          <div class="section-content">
+             
+     <div
+      id="testimonial-carousel"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#testimonialcarousel"
+          data-bs-slide-to="0"
+          class="active rounded-circle"
+          style="width: 10px; height: 10px"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#testimonialcarousel"
+          data-bs-slide-to="1"
+          class="rounded-circle"
+          style="width: 10px; height: 10px"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#testimonialcarousel"
+          data-bs-slide-to="2"
+          class="rounded-circle"
+          style="width: 10px; height: 10px"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div
+          class="carousel-item pb-5 text-center active"
+          data-bs-interval="10000"
+        >
+          <div><img
+            src="./Mr Foures.jpg"
+            class="rounded-circle mb-5 testimonial-image"
+            alt="Carla image"
+            width="100px"
+            height="100px"
+          /></div>
+          <div class="carousel-caption mt-2">
+            <!-- <h5>Carla</h5> -->
+            <p class="mt-4">
+              "Very professional guy, I was so satisfied with the service."
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item pb-5 text-center" data-bs-interval="2000">
+          <div><img
+            src="./Mr Foures.jpg"
+            class="rounded-circle mb-5 testimonial-image"
+            alt="Live image"
+            width="100px"
+            height="100px"
+          /></div>
+          <div class="carousel-caption mt-2">
+            <!-- <h5>Live</h5> -->
+            <p class="mt-4">
+              "Very professional guy, I was so satisfied with the service."
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item pb-5 text-center">
+          <div><img
+            src="./Mr Foures.jpg"
+            class="rounded-circle mb-5 testimonial-image"
+            alt="Josh image"
+            width="100px"
+            height="100px"
+          /></div>
+          <div class="carousel-caption mt-2">
+            <!-- <h5>Joshua</h5> -->
+            <p class="mt-4">
+              "Very professional guy, I was so satisfied with the service."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
         </section>
+
+        <!-- Contact  -->
         <section class="contact w-1oovh">
           <div class="section-head">
             <h3 class="section-title">Contact</h3>
@@ -289,6 +416,7 @@
           <div class="section-content"></div>
         </section>
       </div>
+
     </div>
 
     <!-- JavaScript Bundle with Popper -->
@@ -301,5 +429,11 @@
     <script>
       AOS.init();
     </script> -->
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
   </body>
 </html>
