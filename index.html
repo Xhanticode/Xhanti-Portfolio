@@ -285,7 +285,7 @@
 </div>
 <!-- Mock Portfolio Modal  -->
  <!-- Button trigger modal -->
-<img class="portfolio-image" data-bs-toggle="modal" data-bs-target="#MockPortfolio" src="./Images/Mock Portfolio Site.png" alt="Mock Portfolio Site">
+<img class="portfolio-image mt-4" data-bs-toggle="modal" data-bs-target="#MockPortfolio" src="./Images/Mock Portfolio Site.png" alt="Mock Portfolio Site">
  <!-- Modal -->
  <div class="modal fade" id="MockPortfolio" tabindex="-1" aria-labelledby="MockPortfolioModalLabel" aria-hidden="true">
    <div class="modal-dialog">
@@ -329,8 +329,7 @@
           type="button"
           data-bs-target="#testimonialcarousel"
           data-bs-slide-to="0"
-          class="active rounded-circle"
-          style="width: 10px; height: 10px"
+          class="active rounded-circle carousel-scroll-button"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
@@ -338,16 +337,14 @@
           type="button"
           data-bs-target="#testimonialcarousel"
           data-bs-slide-to="1"
-          class="rounded-circle"
-          style="width: 10px; height: 10px"
+          class="rounded-circle carousel-scroll-button"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
           data-bs-target="#testimonialcarousel"
           data-bs-slide-to="2"
-          class="rounded-circle"
-          style="width: 10px; height: 10px"
+          class="rounded-circle carousel-scroll-button"
           aria-label="Slide 3"
         ></button>
       </div>
@@ -413,11 +410,36 @@
             <span class="section-underline"></span>
             <p>Fill out my form below and pop an email.</p>
           </div>
-          <div class="section-content"></div>
+          <div class="section-content">
+            <!-- Contact form  -->
+            <div id="contactform">
+<form action="https://formspree.io/f/mzboyeon" method="post">
+  <div class="mb-3">
+  <label for="name" class="form-label"><h4>Name*</h4></label>
+  <input type="text" class="form-control" id="name" required>
+ </div>
+  <div class="mb-3">
+  <label for="email" class="form-label"><h4>Email*</h4></label>
+  <input type="text" class="form-control" id="email" required>
+ </div>
+  <div class="mb-3">
+  <label for="phone" class="form-label"><h4>Phone</h4></label>
+  <input type="text" class="form-control" id="phone">
+ </div>
+  <div class="mb-3">
+  <label for="message" class="form-label"><h4>Message*</h4></label>
+  <textarea name="message" id="message" class="form-control" required></textarea>
+ </div>
+  <div class="mb-3 button-container">
+    <input type="submit" class="submit-button" value="Send"><i class="fa-solid fa-paper-plane mx-2" style="font-size: 16px;"></i>
+  </div>
+</form>
+            </div>
+             </div>
         </section>
-      </div>
 
-    </div>
+      </div>
+ </div>
 
     <!-- JavaScript Bundle with Popper -->
     <script
