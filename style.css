@@ -266,34 +266,35 @@ section {
   transform: perspective(200px) rotateY(5deg);
 }
 .main-image {
-  height: 400px;
+  width: 300px;
+  height: auto;
 }
 .image-frame {
 }
 #frame-1 {
   border: solid 1px #f7f4f3;
-  transform: translate(-1rem, 0.4rem);
+  transform: translate(-.4rem, 0.4rem);
   z-index: -1;
   position: absolute;
-  height: 400px;
+  height: 533.328px;
   width: 300px;
   opacity: 0.25;
 }
 #frame-2 {
   border: solid 1px #f7f4f3;
-  transform: translate(-1.4rem, 0.8rem);
+  transform: translate(-.8rem, 0.8rem);
   z-index: -1;
   position: absolute;
-  height: 400px;
+  height: 533.328px;
   width: 300px;
   opacity: 0.15;
 }
 #frame-3 {
   border: solid 1px #f7f4f3;
-  transform: translate(-1.8rem, 1.2rem);
+  transform: translate(-1.2rem, 1.2rem);
   z-index: -1;
   position: absolute;
-  height: 400px;
+  height: 533.328px;
   width: 300px;
   opacity: 0.05;
 }
@@ -369,6 +370,21 @@ a:visited {
 .modal-body {
   background-color: transparent;
 }
+.modal-content {
+  background-color: transparent;
+  border: none;
+  justify-items: center;
+}
+.modal-header {
+  font-size: 20px !important;
+  letter-spacing: -0.005em;
+  line-height: 1.1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #f7f4f3;
+}
 .portfolio-image {
   width: 100%;
   height: auto;
@@ -414,6 +430,12 @@ a:visited {
   border-bottom: solid 0.1px #f7f4f3 !important;
   background-color: transparent;
   text-transform: capitalize;
+  border-radius: 0;
+}
+.form-control:focus {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 [type="submit"]:not(:disabled) {
   background-color: transparent;
