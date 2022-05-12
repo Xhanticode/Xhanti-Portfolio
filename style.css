@@ -491,17 +491,12 @@ a:visited {
     right: 5%;
   }
 }
-@media screen and (max-width: 768px) {
-  section {
-    margin-right: 0;
-    padding-inline: 20px;
-  }
-}
 @media screen and (max-width: 576px) {
   .image-box {
     margin-left: 4%;
   }
-.scroll-content {
-  width: 100vw;
-}
+  section {
+    margin-inline: 2%;
+    padding-inline: 0;
+  }
 }
