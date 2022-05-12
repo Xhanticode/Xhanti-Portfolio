@@ -425,6 +425,9 @@ a:visited {
   width: 6px;
   height: 6px;
 }
+.carousel-scroll-button:hover {
+background-color: #c16200 !important;
+}
 
 /* Skills  */
 .progress-bar {
