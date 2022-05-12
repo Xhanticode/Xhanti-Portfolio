@@ -223,10 +223,10 @@ p {
   font-size: 14px;
 }
 .nav-link:hover {
-  color: #ff8a05 !important;
+  color: #C16200 !important;
 }
 i:hover {
-  color: #ff8a05 !important;
+  color: #C16200 !important;
 }
 
 /* Scroll Content  */
@@ -266,34 +266,35 @@ section {
   transform: perspective(200px) rotateY(5deg);
 }
 .main-image {
-  height: 400px;
+  width: 300px;
+  height: auto;
 }
 .image-frame {
 }
 #frame-1 {
   border: solid 1px #f7f4f3;
-  transform: translate(-1rem, 0.4rem);
+  transform: translate(-.4rem, 0.4rem);
   z-index: -1;
   position: absolute;
-  height: 400px;
+  height: 533.328px;
   width: 300px;
   opacity: 0.25;
 }
 #frame-2 {
   border: solid 1px #f7f4f3;
-  transform: translate(-1.4rem, 0.8rem);
+  transform: translate(-.8rem, 0.8rem);
   z-index: -1;
   position: absolute;
-  height: 400px;
+  height: 533.328px;
   width: 300px;
   opacity: 0.15;
 }
 #frame-3 {
   border: solid 1px #f7f4f3;
-  transform: translate(-1.8rem, 1.2rem);
+  transform: translate(-1.2rem, 1.2rem);
   z-index: -1;
   position: absolute;
-  height: 400px;
+  height: 533.328px;
   width: 300px;
   opacity: 0.05;
 }
@@ -367,7 +368,7 @@ section {
 
 /* Resume */
 a:link {
-  color: #ff8a05;
+  color: #C16200;
   background-color: transparent;
   text-decoration: none;
 }
@@ -381,6 +382,21 @@ a:visited {
 /* Portfolio/ */
 .modal-body {
   background-color: transparent;
+}
+.modal-content {
+  background-color: transparent;
+  border: none;
+  justify-items: center;
+}
+.modal-header {
+  font-size: 20px !important;
+  letter-spacing: -0.005em;
+  line-height: 1.1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #f7f4f3;
 }
 .portfolio-image {
   width: 100%;
@@ -427,6 +443,12 @@ a:visited {
   border-bottom: solid 0.1px #f7f4f3 !important;
   background-color: transparent;
   text-transform: capitalize;
+  border-radius: 0;
+}
+.form-control:focus {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 [type="submit"]:not(:disabled) {
   background-color: transparent;
@@ -436,5 +458,69 @@ a:visited {
   font-size: 16px;
 }
 .form-label:hover {
-  color: #ff8a05 !important;
+  color: #C16200 !important;
+}
+
+/* Media Queries  */
+@media screen and (max-width: 1200px) {
+  section {
+    margin-right: 0;
+    padding-inline: 40px;
+  }
+}
+@media screen and (max-width: 992px){
+  /* .section-head-1 {
+  display: none;
+  }
+  .section-head-2 {
+    display: block !important;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    word-break: normal;
+  }
+  .section-title-2 {
+    padding-left: 0;
+    display: flex;
+  }
+  #landing-title {
+    -webkit-text-stroke: 1px #7c7c7c;
+    display: flex;
+    justify-content: center;
+  }
+  .image-box {
+    margin-left: 6%;
+  }  */
+}
+@media screen and (max-width: 768px) {
+  section {
+    margin-right: 0;
+    padding-inline: 20px;
+  }
+  .menu {
+    z-index: 10;
+    background-color: rgba(247, 244,243,.9);
+    padding: 10px;
+    border-radius: 1%;
+  }
+}
+@media screen and (max-width:585px){
+  .section-title-2 {
+    padding-left: 0;
+    display: flex;
+    -webkit-text-stroke: .05px #7c7c7c;
+    font-size: 14px !important;
+    font-weight: 800;
+  }
+  .main-image {
+    opacity: .6;
+  }
+  .image-box {
+    margin-left: 30%;
+  }
+}
+@media screen and (max-width: 576px){
+  .image-box {margin-left: 0;
+}
 }
