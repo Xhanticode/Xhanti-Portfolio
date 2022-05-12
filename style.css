@@ -501,4 +501,7 @@ a:visited {
   .image-box {
     margin-left: 4%;
   }
+.scroll-content {
+  width: 100vw;
+}
 }
