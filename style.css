@@ -506,6 +506,9 @@ a:visited {
   .image-box {
     margin-left: 30%;
   }
+.scroll-content {
+  width: 100vw;
+}
 }
 @media screen and (max-width: 576px){
   .image-box {margin-left: 0;
